@@ -40,12 +40,13 @@ def main():
       <guid isPermaLink="false">{s['id']}</guid>
       <pubDate>{format_datetime(dt)}</pubDate>
       <category>{escape(s['current'])}</category>
+      <category>{escape(s.get('jurisdiction', ''))}</category>
       <description>{escape(s['summary'])}</description>
       <content:encoded><![CDATA[{body_html}]]></content:encoded>
       <media:content url="{img_url}" type="image/jpeg" medium="image" />
       <enclosure url="{img_url}" type="image/jpeg" length="0" />
     </item>""")
-        lis.append(f'      <li><a href="feed.xml">{escape(s["title"])}</a> — {escape(s["summary"])}</li>')
+        lis.append(f'      <li><a href="feed.xml">{escape(s["title"])}</a> — {escape(s["summary"])} ({escape(s.get("place", ""))})</li>')
 
     feed = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
