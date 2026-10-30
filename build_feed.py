@@ -46,8 +46,12 @@ def main():
             credit_html = (f'<p><em>Photo: {escape(s["photoCredit"])} — via '
                            f'<a href="{escape(s["photoSourceUrl"])}">{escape(s["photoCredit"])}</a>.</em></p>')
             credit_media = f'\n        <media:credit role="photographer">{escape(s["photoCredit"])}</media:credit>'
+        readmore_html = ""
+        if s.get("orgUrl"):
+            readmore_html = (f'<p>{escape(s["readMore"])} '
+                             f'<a href="{escape(s["orgUrlHref"])}">{escape(s["orgUrl"])}</a>.</p>')
         body_html = f'<p><img src="{img_url}" alt="{escape(s["title"])}" /></p>' + "".join(
-            f"<p>{escape(p)}</p>" for p in s["body"]) + credit_html
+            f"<p>{escape(p)}</p>" for p in s["body"]) + readmore_html + credit_html
         items.append(f"""    <item>
       <title>{escape(s['title'])}</title>
       <link>{base}/index.html#{s['slug']}</link>

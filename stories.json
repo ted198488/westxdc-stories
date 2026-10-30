@@ -23,7 +23,10 @@
   "imageType": "photo",
   "photo": "images/story-001-photo.jpg",
   "photoCredit": "Kitchen of Purpose",
-  "photoSourceUrl": "https://kitchenofpurpose.org"
+  "photoSourceUrl": "https://kitchenofpurpose.org",
+  "readMore": "Read more about Kitchen of Purpose at",
+  "orgUrl": "kitchenofpurpose.org",
+  "orgUrlHref": "https://kitchenofpurpose.org"
  },
  {
   "body": [
@@ -43,7 +46,10 @@
   "title": "Inside the Innovation Kitchen at Nestlé's Rosslyn HQ",
   "place": "Arlington (Rosslyn)",
   "jurisdiction": "Arlington County",
-  "imageType": "illustration"
+  "imageType": "illustration",
+  "readMore": "More about Nestlé USA's work at",
+  "orgUrl": "nestleusa.com",
+  "orgUrlHref": "https://www.nestleusa.com"
  },
  {
   "body": [
@@ -64,7 +70,10 @@
   "title": "The Disposal Company That Funds High School Theater",
   "place": "Ashburn",
   "jurisdiction": "Loudoun County",
-  "imageType": "illustration"
+  "imageType": "illustration",
+  "readMore": "Find out more about Evergreen Disposal at",
+  "orgUrl": "evergreendisposalva.com",
+  "orgUrlHref": "https://www.evergreendisposalva.com"
  },
  {
   "body": [
@@ -88,7 +97,10 @@
   "imageType": "photo",
   "photo": "images/story-004-photo.jpg",
   "photoCredit": "Westville Clarendon",
-  "photoSourceUrl": "https://westville.com/locations/westville-clarendon/"
+  "photoSourceUrl": "https://westville.com/locations/westville-clarendon/",
+  "readMore": "See what's on at Westville Clarendon at",
+  "orgUrl": "westville.com",
+  "orgUrlHref": "https://westville.com/locations/westville-clarendon/"
  },
  {
   "body": [
@@ -110,7 +122,10 @@
   "title": "A Bank That Runs Workforce Sessions",
   "place": "Alexandria",
   "jurisdiction": "City of Alexandria",
-  "imageType": "illustration"
+  "imageType": "illustration",
+  "readMore": "Learn more about Burke & Herbert Bank at",
+  "orgUrl": "burkeandherbertbank.com",
+  "orgUrlHref": "https://www.burkeandherbertbank.com"
  },
  {
   "body": [
@@ -135,7 +150,10 @@
   "imageType": "photo",
   "photo": "images/story-006-photo.jpg",
   "photoCredit": "Blood Cancer United",
-  "photoSourceUrl": "https://bloodcancerunited.org"
+  "photoSourceUrl": "https://bloodcancerunited.org",
+  "readMore": "More about Blood Cancer United at",
+  "orgUrl": "bloodcancerunited.org",
+  "orgUrlHref": "https://bloodcancerunited.org"
  },
  {
   "body": [
@@ -156,7 +174,10 @@
   "title": "Wrenches, Confidence, and a First Work Skill",
   "place": "Arlington",
   "jurisdiction": "Arlington County",
-  "imageType": "illustration"
+  "imageType": "illustration",
+  "readMore": "More on Phoenix Bikes at",
+  "orgUrl": "phoenixbikes.org",
+  "orgUrlHref": "https://phoenixbikes.org"
  },
  {
   "body": [
@@ -178,7 +199,10 @@
   "title": "The Global Ed-Tech Conversation Runs Through Northern Virginia",
   "place": "Arlington",
   "jurisdiction": "Arlington County",
-  "imageType": "illustration"
+  "imageType": "illustration",
+  "readMore": "Discover the mEducation Alliance at",
+  "orgUrl": "meducationalliance.org",
+  "orgUrlHref": "https://meducationalliance.org"
  },
  {
   "body": [
@@ -199,7 +223,10 @@
   "title": "Conservation Science Meets the Beauty Counter",
   "place": "Washington, DC",
   "jurisdiction": "Washington, DC",
-  "imageType": "illustration"
+  "imageType": "illustration",
+  "readMore": "Explore more of WWF's work at",
+  "orgUrl": "worldwildlife.org",
+  "orgUrlHref": "https://www.worldwildlife.org"
  },
  {
   "body": [
@@ -220,6 +247,9 @@
   "title": "An Innovation Partnership in the Heart of GovCon Country",
   "place": "Reston",
   "jurisdiction": "Fairfax County",
-  "imageType": "illustration"
+  "imageType": "illustration",
+  "readMore": "Find SOSi at",
+  "orgUrl": "sosi.com",
+  "orgUrlHref": "https://www.sosi.com"
  }
 ]
