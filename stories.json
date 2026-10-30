@@ -19,7 +19,11 @@
   "summary": "A culinary school in Arlington where county funding, a legendary chef's foundation, and a Hilton hiring partner all meet in one kitchen.",
   "title": "The Teaching Kitchen Where Arlington's Currents Meet",
   "place": "Arlington",
-  "jurisdiction": "Arlington County"
+  "jurisdiction": "Arlington County",
+  "imageType": "photo",
+  "photo": "images/story-001-photo.jpg",
+  "photoCredit": "Kitchen of Purpose",
+  "photoSourceUrl": "https://kitchenofpurpose.org"
  },
  {
   "body": [
@@ -38,7 +42,8 @@
   "summary": "A global food company runs its idea accelerator, an R&D kitchen lab, and its marketing center of excellence out of Rosslyn.",
   "title": "Inside the Innovation Kitchen at Nestlé's Rosslyn HQ",
   "place": "Arlington (Rosslyn)",
-  "jurisdiction": "Arlington County"
+  "jurisdiction": "Arlington County",
+  "imageType": "illustration"
  },
  {
   "body": [
@@ -53,12 +58,13 @@
    "Evergreen Disposal Services",
    "Chantilly High School Drama Department"
   ],
-  "pubDate": "2026-10-28",
+  "pubDate": "2026-10-27",
   "slug": "evergreen-disposal-chantilly-drama",
   "summary": "Evergreen Disposal Services funds the Chantilly High School drama department. Nobody's directory has that tie. Ours does.",
   "title": "The Disposal Company That Funds High School Theater",
   "place": "Ashburn",
-  "jurisdiction": "Loudoun County"
+  "jurisdiction": "Loudoun County",
+  "imageType": "illustration"
  },
  {
   "body": [
@@ -73,12 +79,16 @@
    "Westville Clarendon",
    "Arlington Artists Alliance"
   ],
-  "pubDate": "2026-10-27",
+  "pubDate": "2026-10-28",
   "slug": "westville-clarendon-gallery",
   "summary": "A Clarendon restaurant hangs local artists' work on its walls — a neighborhood spot doing double duty as gallery infrastructure.",
   "title": "Dinner and a Gallery: Westville Clarendon × Arlington Artists Alliance",
   "place": "Arlington (Clarendon)",
-  "jurisdiction": "Arlington County"
+  "jurisdiction": "Arlington County",
+  "imageType": "photo",
+  "photo": "images/story-004-photo.jpg",
+  "photoCredit": "Westville Clarendon",
+  "photoSourceUrl": "https://westville.com/locations/westville-clarendon/"
  },
  {
   "body": [
@@ -94,12 +104,13 @@
    "City of Alexandria Workforce Development Center",
    "The Campagna Center"
   ],
-  "pubDate": "2026-10-26",
+  "pubDate": "2026-10-25",
   "slug": "burke-and-herbert-workforce",
   "summary": "Burke & Herbert partners with Alexandria's Workforce Development Center and funds The Campagna Center — a bank's community role, on the record.",
   "title": "A Bank That Runs Workforce Sessions",
   "place": "Alexandria",
-  "jurisdiction": "City of Alexandria"
+  "jurisdiction": "City of Alexandria",
+  "imageType": "illustration"
  },
  {
   "body": [
@@ -115,12 +126,16 @@
    "Builders FirstSource Foundation",
    "Subaru of America"
   ],
-  "pubDate": "2026-10-25",
+  "pubDate": "2026-10-26",
   "slug": "blood-cancer-united-gift",
   "summary": "The Builders FirstSource Foundation gave $250,000 to Blood Cancer United — a gift announced in a donor's post, found by listening on the counterparty side.",
   "title": "$250,000 for the Fight Against Blood Cancer",
   "place": "Washington, DC",
-  "jurisdiction": "Washington, DC"
+  "jurisdiction": "Washington, DC",
+  "imageType": "photo",
+  "photo": "images/story-006-photo.jpg",
+  "photoCredit": "Blood Cancer United",
+  "photoSourceUrl": "https://bloodcancerunited.org"
  },
  {
   "body": [
@@ -140,7 +155,8 @@
   "summary": "Phoenix Bikes teaches Arlington kids to build bikes — and partners with the region's public behavioral-health board.",
   "title": "Wrenches, Confidence, and a First Work Skill",
   "place": "Arlington",
-  "jurisdiction": "Arlington County"
+  "jurisdiction": "Arlington County",
+  "imageType": "illustration"
  },
  {
   "body": [
@@ -161,7 +177,8 @@
   "summary": "The mEducation Alliance convenes the world's education-technology funders and practitioners — from right here.",
   "title": "The Global Ed-Tech Conversation Runs Through Northern Virginia",
   "place": "Arlington",
-  "jurisdiction": "Arlington County"
+  "jurisdiction": "Arlington County",
+  "imageType": "illustration"
  },
  {
   "body": [
@@ -181,7 +198,8 @@
   "summary": "WWF and Dior Beauty run a programs partnership — the pairing nobody predicts, surfaced by social listening.",
   "title": "Conservation Science Meets the Beauty Counter",
   "place": "Washington, DC",
-  "jurisdiction": "Washington, DC"
+  "jurisdiction": "Washington, DC",
+  "imageType": "illustration"
  },
  {
   "body": [
@@ -201,6 +219,7 @@
   "summary": "Reston's SOSi partners with Janes on innovation — plus platinum support for its own professional community's conferences.",
   "title": "An Innovation Partnership in the Heart of GovCon Country",
   "place": "Reston",
-  "jurisdiction": "Fairfax County"
+  "jurisdiction": "Fairfax County",
+  "imageType": "illustration"
  }
 ]

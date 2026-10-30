@@ -23,7 +23,11 @@ def main():
     cfg = load("site_config.json", {})
     base = cfg.get("base_url", "https://example.github.io/westxdc-stories").rstrip("/")
     stories = load("stories.json", [])
-    ready = [s for s in stories if os.path.exists(os.path.join(HERE, s["image"]))]
+    def has_img(s):
+        if os.path.exists(os.path.join(HERE, s["image"])):
+            return True
+        return bool(s.get("photo")) and os.path.exists(os.path.join(HERE, s["photo"]))
+    ready = [s for s in stories if has_img(s)]
     skipped = [s["id"] for s in stories if s not in ready]
     ready.sort(key=lambda s: s["pubDate"], reverse=True)
 
@@ -31,9 +35,19 @@ def main():
     lis = []
     for s in ready:
         dt = datetime.strptime(s["pubDate"], "%Y-%m-%d").replace(hour=14, tzinfo=timezone.utc)
-        img_url = f"{base}/{s['image']}"
+        is_photo = s.get("imageType") == "photo" and s.get("photo") and os.path.exists(os.path.join(HERE, s["photo"]))
+        rel = s["photo"] if is_photo else s["image"]
+        img_url = f"{base}/{rel}"
+        mime = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".webp": "image/webp"}.get(
+            os.path.splitext(rel)[1].lower(), "image/jpeg")
+        credit_html = ""
+        credit_media = ""
+        if is_photo:
+            credit_html = (f'<p><em>Photo: {escape(s["photoCredit"])} — via '
+                           f'<a href="{escape(s["photoSourceUrl"])}">{escape(s["photoCredit"])}</a>.</em></p>')
+            credit_media = f'\n        <media:credit role="photographer">{escape(s["photoCredit"])}</media:credit>'
         body_html = f'<p><img src="{img_url}" alt="{escape(s["title"])}" /></p>' + "".join(
-            f"<p>{escape(p)}</p>" for p in s["body"])
+            f"<p>{escape(p)}</p>" for p in s["body"]) + credit_html
         items.append(f"""    <item>
       <title>{escape(s['title'])}</title>
       <link>{base}/index.html#{s['slug']}</link>
@@ -43,8 +57,9 @@ def main():
       <category>{escape(s.get('jurisdiction', ''))}</category>
       <description>{escape(s['summary'])}</description>
       <content:encoded><![CDATA[{body_html}]]></content:encoded>
-      <media:content url="{img_url}" type="image/jpeg" medium="image" />
-      <enclosure url="{img_url}" type="image/jpeg" length="0" />
+      <media:content url="{img_url}" type="{mime}" medium="image">{credit_media}
+      </media:content>
+      <enclosure url="{img_url}" type="{mime}" length="0" />
     </item>""")
         lis.append(f'      <li><a href="feed.xml">{escape(s["title"])}</a> — {escape(s["summary"])} ({escape(s.get("place", ""))})</li>')
 
